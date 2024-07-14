@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #454242;
+             
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+
+        }
+
+        .button3 {
+            background-color: white;
+            color: black;
+            border: 2px solid #f44336;
+        }
+
+        .button3:hover {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button {
+            background-color: #f6f9f8;
+            /* Green */
+            border: none;
+            color: rgb(21, 21, 21);
+            padding: 8px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 19px;
+            float: right;
+            margin-top: 10px
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+
+        }
+
+        .column m {
+            width: 50%;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px) {
+
+            .column,
+            .column m 
+            .footer .footer-row, .footer-col, .links {
+                width: 100%;
+
+            }
+        }
+
+        /* Importing Google font - Open Sans */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: open sans, sans-serif;
+        }
+
+        .footer {
+            background-color: #727070;
+            padding: 30px 0;
+            
+            top: 50%;
+            border-radius: 6px;
+            border-color: #454242 solid;
+            border-width: 1px;
+            width: 100%;
+        }
+
+        .footer .footer-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 3.5rem;
+            padding: 60px;
+        }
+
+        .footer-row .footer-col h4 {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .footer-col .links {
+            margin-top: 20px;
+        }
+
+        .footer-col .links li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer-col .links li a {
+            text-decoration: none;
+            color: #bfbfbf;
+        }
+
+        .footer-col .links li a:hover {
+            color: #232222;
+        }
+
+        .footer-col p {
+            margin: 20px 0;
+            color: #bfbfbf;
+            max-width: 300px;
+        }
+
+        .footer-col form {
+            display: flex;
+            gap: 5px;
+        }
+
+        .footer-col input {
+            height: 40px;
+            border-radius: 6px;
+            background: none;
+            width: 100%;
+            outline: none;
+            border: 1px solid #202431;
+            caret-color: #f8f3f3;
+            color: #2f2c2c;
+            padding-left: 10px;
+        }
+
+        .footer-col input::placeholder {
+            color: #ccc;
+        }
+
+        .footer-col form button {
+            background: #fff;
+            outline: none;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.2s ease;
+        }
+
+        .footer-col form button:hover {
+            background: #cecccc;
+        }
+
+        .footer-col .icons {
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+            cursor: pointer;
+        }
+
+        .footer-col .icons i {
+            color: #afb6c7;
+        }
+
+        .footer-col .icons i:hover {
+            color: #fff;
+        }
+        
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">services</a>
+        <a href="#">about</a>
+        <button class="button button3">Red</button>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At velit quod repudiandae,
+                quo repellat esse eaque, tempore illum necessitatibus nihil dolorum suscipit expedita
+                perferendis nostrum voluptates doloremque accusantium dicta dolore!
+            </p>
+        </div>
+        <div class="column m">
+            <h2>Column m</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At velit quod repudiandae,
+                quo repellat esse eaque, tempore illum necessitatibus nihil dolorum suscipit expedita
+                perferendis nostrum voluptates doloremque accusantium dicta dolore!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At velit quod repudiandae,
+                quo repellat esse eaque, tempore illum necessitatibus nihil dolorum suscipit expedita
+                perferendis nostrum voluptates doloremque accusantium dicta dolore!
+            </p>
+        </div>
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At velit quod repudiandae,
+                quo repellat esse eaque, tempore illum necessitatibus nihil dolorum suscipit expedita
+                perferendis nostrum voluptates doloremque accusantium dicta dolore!
+            </p>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Compressions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="links">
+                    <li><a href="#">Free Designs</a></li>
+                    <li><a href="#">Latest Designs</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Popular Designs</a></li>
+                    <li><a href="#">Art Skills</a></li>
+                    <li><a href="#">New Uploads</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="links">
+                    <li><a href="#">Customer Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Media Kit</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <form action="#">
+                    <input type="text" placeholder="Your email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
